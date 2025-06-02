@@ -1,0 +1,21 @@
+PS C:\Users\panth\OneDrive\ドキュメント\git_tutorial> cd C:\Users\panth\OneDrive\ドキュメント\git_challenge
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> git init
+Initialized empty Git repository in C:/Users/panth/OneDrive/ドキュメント/git_challenge/.git/
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> git add hello_world.txt
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 7a245d0] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> echo "こんにちは、世界！" >> hello_world.txt 
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> git add hello_world.txt
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> git commit -m "日本語訳を追記"
+[main f7933b2] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> git log --oneline
+f7933b2 (HEAD -> main) 日本語訳を追記
+7a245d0 hello_world.txtを追加
+PS C:\Users\panth\OneDrive\ドキュメント\git_challenge> 
